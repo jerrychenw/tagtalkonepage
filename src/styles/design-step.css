@@ -1,0 +1,21 @@
+#design-step {
+    padding: 40px 0px;
+}
+
+.design-step-item {
+    margin-bottom: 30px;
+}
+
+.design-desc {
+    color:#323040;
+    font-family: Roboto;
+    font-weight:300;
+    font-size:18px;
+    margin-top:20px;
+}
+
+.design-title {
+    color: #323040;
+    font-size:20px;
+    font-family: Roboto;
+}

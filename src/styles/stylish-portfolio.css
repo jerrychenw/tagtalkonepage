@@ -1,0 +1,428 @@
+/*!
+ * Start Bootstrap - Stylish Portfolio Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Global Styles */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Roboto", "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.text-vertical-center h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+}
+
+.text-vertical-left {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+}
+
+/* Custom Button Styles */
+
+.btn-dark {
+    border-radius: 0px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+    opacity: 0.9;
+}
+
+.btn-purple {
+    background-color:rgb(67,63,111);
+    border:none;
+    padding:11px 20px;
+    text-align:center;
+    font-family:Roboto;
+    font-weight:300;
+    color:white;
+}
+.btn-purple:hover,
+.btn-purple:focus,
+.btn-purple:active {
+    background-color:rgba(67,63,111, 0.8);
+    color:white;
+}
+
+.btn-light {
+    background-color: rgb(255,255,255);
+    border:none;
+    padding:11px 20px;
+    text-align:center;
+    font-family:Roboto;
+    font-weight:400;
+    color: #323040;
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+    background-color: rgba(255,255,255,0.8);
+    color: #323040;
+}
+
+.btn-transparent {
+    border-style: solid;
+    border-color: white;
+    background-color: rgba(255,255,255,0.3);
+    //background-color: ;
+    padding:10px 20px;
+    text-align:center;
+    font-family:Roboto;
+    font-weight:300;
+    color: white;
+}
+
+.btn-transparent:hover,
+.btn-transparent:focus,
+.btn-transparent:active {
+    border-style: solid;
+    background-color: rgba(255,255,255,0.7);
+    border-color: white;
+    color: white;
+}
+
+/* Custom Horizontal Rule */
+
+hr.small {
+    max-width: 100px;
+}
+
+/* Side Menu */
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    margin-right: -250px;
+    overflow-y: auto;
+    background: #222;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 55px;
+    font-size: 18px;
+    line-height: 55px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+#menu-toggle {
+    display: none;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#sidebar-wrapper.active {
+    right: 250px;
+    width: 250px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.toggle {
+    margin: 10px 10px 0 0;
+    border-radius: 2px;
+}
+
+/* About */
+
+.about {
+    padding: 50px 0;
+}
+
+/* Works */
+.work-description {
+    padding-top: 120px;
+    padding-bottom: 50px;
+}
+
+@media all and (max-width: 990px) {
+    .work-description {
+        padding-top: 10px;
+        padding-bottom: 50px;
+    }
+}
+
+#email-subscribe {
+    width: 60%;
+}
+
+@media all and (max-width: 990px) {
+    #email-subscribe {
+        width: 80%;
+    }
+}
+
+/* graphic-seperator */
+#graphic-seperator {
+    //background: url(../img/469560291.jpg); 
+    //background-repeat:no-repeat;
+    //background-size: 100%;
+    //background-position: 0 0; 
+    height:300px;
+    max-width:1920;
+    margin:0px;
+}
+
+/* Portfolio */
+
+.portfolio {
+    padding: 50px 0;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.img-portfolio {
+    margin: 0 auto;
+}
+
+.img-portfolio:hover {
+    opacity: 1;
+}
+
+/* Call to Action */
+.call-to-action {
+    padding: 50px 0;
+}
+
+.call-to-action .btn {
+    margin: 10px;
+}
+
+/* Map */
+.map {
+    height: 500px;
+}
+
+@media(max-width:768px) {
+    .map {
+        height: 75%;
+    }
+}
+
+/* subscribe-form */
+.subscribe-form {
+  display: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #a1a9b1;
+  background-color: #ecf0f1;
+}
+form {
+}
+		
+form label {
+	display: block;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form select,
+form textarea {
+	display: block;
+	width: 100%;
+	/* padding: 0.75em; */
+	/* background: none; */
+	/* border: solid 2px rgba(185,186,187,0.25); */
+	border: none;
+	/* color: inherit; */
+	/* border-radius: 0.5em; */
+	outline: none;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 10px;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-o-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+
+	-moz-transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+form input[type="text"]:hover,
+    form input[type="email"],
+form input[type="password"]:hover,
+form select:hover,
+form textarea:hover {
+}
+
+form input[type="text"]:focus,
+    form input[type="email"],
+form input[type="password"]:focus,
+form select:focus,
+form textarea:focus {
+	border-color: #9ac8e9;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form select {
+	line-height: 1em;
+}
+	
+form textarea {
+	min-height: 8em;
+}
+
+form .formerize-placeholder {
+	color: rgba(145,146,147,0.85) !important;
+}
+
+form ::-webkit-input-placeholder {
+	color: rgba(145,146,147,0.85) !important;
+}
+
+form :-moz-placeholder {
+	color: rgba(145,146,147,0.85) !important;
+}
+
+form ::-moz-placeholder {
+	color: rgba(145,146,147,0.85) !important;
+}
+
+form :-ms-input-placeholder {
+	color: rgba(145,146,147,0.85) !important;
+}
+
+form ::-moz-focus-inner {
+	border: 0;
+}
+
+#email-input {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border:solid 1px; 
+    border-radius: 3px; 
+    background-color: #fff; 
+    padding: 6px 10px;
+    font-size: 22px; 
+    line-height:30px;
+}
+
+@media all and (max-width: 990px) {
+    #email-input {
+        font-size: 16px; 
+    }
+}
+/* Footer */
+
+#almost-there {
+    margin: 40px 0 0 20px; 
+    font-size: 60px;
+}
+
+@media all and (max-width: 990px) {
+    #almost-there {
+        margin: 40px 0 0 20px; 
+        font-size: 40px;
+    }
+}
+
+#almost-there-sub {
+    margin: 20px 0 40px 0;
+}
+
+@media all and (max-width: 990px) {
+    #almost-there-sub {
+        font-size: 20px;
+    }
+}
+
+footer {
+    background-color: #444;
+    //padding: 100px 0;
+}
+
+
+.block-title {
+    color: #323040; 
+    margin-bottom: 50px;
+    font-weight: 300; 
+    font-family: Roboto Slab;
+    font-size: 32px;
+}
+

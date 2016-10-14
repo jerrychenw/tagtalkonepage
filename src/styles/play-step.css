@@ -1,0 +1,284 @@
+.play-step {
+    padding: 40px 0px;
+}
+#play-title {
+    margin-bottom: 30px;
+}
+
+#slide-container {
+    height:600px;
+    position:relative;
+}
+.step-img {
+    cursor: pointer;
+    position:absolute;
+    height:100px;
+    left: -100px;
+}
+
+.vertical-dash-line {
+    height: 100px;
+    position: absolute;
+    left: -51px;
+    border-left: 4px dashed #555;
+}
+
+#mobile {
+    position:absolute;
+    left: 408px;
+    top: 21px;
+    height: 558px;
+    z-index:2
+}
+
+#mobile-content {
+    position:absolute;
+    left:438px;
+    top:68px;
+    height:440px;
+    z-index:3;
+}
+
+.step-desc-block {
+    position: absolute;
+    height: 100px;
+    width: 280px;
+    text-align: left;
+    font-size: 22px;
+    color: #323040;
+    font-family: Roboto;
+    font-weight:300;
+    left: 40px;
+    z-index:1;
+}
+
+#step-desc-block-1 {
+    top:57px;
+}
+
+#step-desc-block-2{
+    top:270px;
+}
+
+#step-desc-block-3{
+    top:442px;
+}
+
+#slide {
+    position:relative;
+    top:250px;
+    width:200px; 
+    z-index:1;
+    display: none;
+}
+
+.slide {
+    -webkit-animation: slidein 2s; /* Chrome, Safari, Opera */
+    animation: slidein 2s; /* Firefox */
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes slidein {
+    from { left: -50px; }
+    to { left: 310px; }
+}
+
+/* Standard syntax */
+@keyframes slidein {
+    from { left: -50px; }
+    to { left: 310px; }
+}
+
+#play-step-container {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/****************************************
+Flip Image Part
+****************************************/
+/* entire container, keeps perspective */
+.flip-container {
+    perspective: 1000;
+}
+
+/* flip the pane when hovered */
+.flip-container.flip .flipper{
+    transform: rotateY(180deg);
+}
+
+.flip-container, .front-flip, .back-flip {
+    position:absolute;
+    left:400px;
+    top:210px;
+    width: 320px;
+    height:440px;
+    z-index:3;
+}
+
+.front-flip img, .back-flip img {
+    width: 128px;
+}
+
+/* flip speed goes here */
+.flipper {
+    transition: 1.5s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+/* hide back of pane during swap */
+.front-flip, .back-flip{
+    backface-visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* front pane, placed above back-flip */
+.front-flip {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back-flip {
+    transform: rotateY(180deg);
+}
+
+/* add shadow for back-flip img */
+.back-flip img {
+    box-shadow: 1px 1px 3px #888888;
+}
+/****************************************
+End of Flip Image Part
+****************************************/
+
+@media all and (max-width: 1000px) {
+    .step-desc-block {
+        left: 70px;
+    }
+    .step-img {
+        cursor: pointer;
+        left: -70px;
+    }
+    .vertical-dash-line {
+        left: -22px;
+    }
+    #mobile {
+        left: 408px;
+        top: 50px;
+        height: 508px;
+    }
+    #mobile-content {
+        left: 435px;
+        top: 94px;
+        height: 400px;
+    }
+    .flip-container {
+        left:386px;
+        top:223px;
+    }
+    .front-flip img, .back-flip img {
+        width: 116px;
+    }
+    /* Chrome, Safari, Opera */
+    @-webkit-keyframes slidein {
+        from { left: -210px; }
+        to { left: 250px; }
+    }
+    /* Standard syntax */
+    @keyframes slidein {
+        from { left: -210px; }
+        to { left: 250px; }
+    }
+}
+
+@media all and (max-width: 800px) {
+    #slide-container {
+        height:680px;
+    }
+    #play-step-container {
+        width: 100%;
+    }
+    .step-desc-block {
+        left: 120px;
+    }
+    .step-img {
+        left: -20px;
+        //left: -20px;
+        display: none;
+    }
+    .vertical-dash-line {
+        left: 28px;
+        //left: 28px;
+        display: none;
+    }
+    #mobile {
+        left:423px;
+        top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        height: 450px;
+    }
+    #mobile-content {
+        left:439px;
+        top: 82px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        height: 360px;
+    }
+    .flip-container {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        left:-2px;
+        top:47px;
+    }
+    .front-flip img, .back-flip img {
+        width: 105px;
+    }
+    #slide {
+        width: 150px;
+        z-index: 1;
+    }
+    /* Chrome, Safari, Opera */
+    @-webkit-keyframes slidein {
+        from { left: -80px; }
+        to { left: 80px; }
+    }
+    /* Standard syntax */
+    @keyframes slidein {
+        from { left: -80px; }
+        to { left: 80px; }
+    }
+    #step-desc-block-1 {
+        top:530px;
+    }
+    #step-desc-block-2{
+        top:540px;
+    }
+    #step-desc-block-3{
+        top:530px;
+    }
+    .step-desc-block{
+        font-size: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        width: 270px;
+        text-align: center;
+    }
+    #play-title {
+        margin: 20px 0px 0px 0px;
+    }
+}

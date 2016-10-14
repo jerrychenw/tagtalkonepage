@@ -1,0 +1,96 @@
+#subscribe {
+    width:100%;
+    margin: 0;
+}
+.wrapper {
+    width: 800px;
+    margin: 0px auto 0px auto;
+    text-align: left;
+}
+
+.wrapper h1 {
+    font-family: Roboto Slab;
+    font-weight: 300;
+    font-size:32px;
+}
+
+.wrapper  p {
+    font-family: Roboto;
+    font-weight: 300;
+    font-size:20px;
+}
+
+.wrapper  a {
+    font-family: Roboto;
+    font-weight: 300;
+    font-size:20px;
+    color: black;
+}
+.wrapper  a:hover{
+    color: rgb(120,120,120);
+}
+
+.bodycontent {
+    padding: 30px 40px;
+    border-radius: 2px;
+    background-color: rgb(238,238,238);
+}
+
+.field-input{
+    margin: 0;
+    border-radius: 3px;
+    -webkit-appearance: none;
+    color: #5d5d5d !important;
+}
+
+.mc-field-group {
+    margin: 5px auto 10px auto;
+}
+.indicates-required {
+    display: none;
+}
+
+label .asterisk {
+    visibility: hidden;
+}
+
+.input-btn {
+    font-family: Roboto;
+    font-weight: 300;
+}
+
+#submit-btn {
+    margin-top: 25px;
+}
+
+@media all and (max-width: 900px) {
+    .wrapper {
+        width:80%;
+    }
+}
+
+#subscribe-place-holder {
+    height:75px;
+    width:100%;
+}
+
+@media all and (max-height: 600px) {
+    #subscribe-place-holder {
+        height: 10px;
+    }
+    #submit-btn {
+        margin-top: 20px;
+    }
+}
+
+@media all and (max-width: 700px) , all and (max-height: 600px) {
+    .wrapper h1 {
+        font-size: 28px;
+    }
+    .wrapper p {
+        font-size: 18px;
+    }
+    .bodycontent {
+        padding: 15px 30px 25px 30px;
+    }
+}

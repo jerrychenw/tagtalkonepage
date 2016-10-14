@@ -1,0 +1,22 @@
+{
+  "name": "tagabout-landing-dev",
+  "version": "0.01",
+  "authors": [
+    "PCH <p7huang@gmail.com>"
+  ],
+  "main": "build/index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3",
+    "bootstrap": "~3.3.1",
+    "fontawesome": "~4.2.0"
+  }
+}

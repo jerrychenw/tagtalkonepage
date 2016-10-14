@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="">
+
+    <title>TagHunt - Design and play high-tech treasure hunt</title>
+    <meta name="description=" content="TagHunt is a platform that allows people, who love exploration and stories, to design and play a high-tech treasure hunt via NFC tags and smartphones.">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- icon for browser tab -->
+    <link rel="icon" href="img/flow2_3_find_select.png">
+
+    <!-- Begin MailChimp Signup Form -->
+    <link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+    
+    <!-- Custom CSS -->
+    <!-- <link href="styles/stylish-portfolio.css" rel="stylesheet"> -->
+    <link href="styles/styles.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="bower_components/fontawesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <!-- Landing -->
+    <section id="landing" class="landing" style="position:relative">
+        <div id="header-bar" style="height:60px">
+            <a id="logo" href="#landing" style=""><img src="img/logo_horizontal_dark.png" style=""></a>
+            <a id="subscribe-btn" class="btn btn-transparent" href="subscribe.html" style="display:none">Subscribe</a>
+            <a id="login-btn" class="btn btn-transparent" href="http://default-environment-mjiavempv2.elasticbeanstalk.com/" style="">Log in</a>
+        </div>
+        <div id="slogan" class="text-vertical-left"> 
+            <h1> Turn The World <br> Into Your Playground </h1>
+            <p> Design and play high-tech treasure hunt via <a href=#tag>NFC tags<a> </p>
+            <a id="how-to-play-btn" class="btn btn-purple" href="#play-step" style="">How to Play</a>
+            <a id="how-to-design-btn" class="btn btn-light" href="#design-step" style="">How to Design</a>
+        </div>
+        <div id="landing-footer" style="">
+            <img id="mobile-top" style="" src="img/Nexus_5_with_content.png">
+            <p> <span id="subscribe-title"> It's happening all around you! </span><br>
+            We are in the alpha testing. <a id="subscribe-desc" href="subscribe.html">Subscribe us</a> for the latest news.</p>
+        </div>
+    </section>
+    
+    <section id="tag" class="tag">
+        <div class="container" style="margin-top: 20px; margin-bottom:20px;">
+            <div class="row text-center">
+                <div class="col-md-6">
+                    <img id="big-purple-tag" class="" src="img/tag_purple_detail.png" style="">
+                </div>
+                <div class="col-md-6 text-vertical-left" style="height:300px;">
+                    <h1 id="nfc-title"> What are NFC tags? </h1>
+                    <p id="nfc-desc"> NFC (near field communication) tags transmit information across short distance to the NFC enabled devices, e.g. your smartphones. The tags work without batteries, and often look like tokens or stickers. <br> <br>
+                    TagHunt tags are made of waterproof and anti-metal high quality NFC tags, which is an excellent solution for both indoor and outdoor activities. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- play-step -->
+    <section id="play-step" class="play-step" style="">
+        <div class="" id="play-step-container">
+            <div class="row text-center" style="margin: 0px">
+                <div class="">
+                    <div id="play-title" class="block-title">
+                        3 Steps to Begin Your Adventure
+                    </div>
+                    <div id='slide-container' style="">
+                        <img id="step-img-1" class="step-img" style="top:50px;" src='img/flow2_1_download.png'>
+                        <div class="vertical-dash-line" style="top: 150px;"></div>
+                        <div id="step-desc-block-1" class="step-desc-block" style="">
+                            Download the official free TagHunt app from Google Play. (Not yet released)
+                        </div>
+                        <img id="step-img-2" class="step-img" style="top:250px;" src='img/flow2_2_join.png'>
+                        <div class="vertical-dash-line" style="top: 350px;"></div>
+                        <div id="step-desc-block-2" class="step-desc-block" style="">
+                            Select and join the quests around you.
+                        </div>
+                        <img id="step-img-3" class="step-img" style="top:450px;" src='img/flow2_3_find.png'>
+                        <div id="step-desc-block-3" class="step-desc-block" style="">
+                            Find and tap the tags one-by-one with your smartphone to enjoy the adventure the host creates.
+                        </div>
+                        <img id="mobile" style="" src='img/Nexus_5_Front_View_tight.png'>
+                        <img id="mobile-content" style="" src='img/play-step-googleplay.jpg'>
+                        <img id="slide" style="" src='img/tag_purple_detail.png'>
+                        <!-- flipped image -->
+                        <div class="flip-container" style="display: none;">
+                        <div class="flipper">
+                            <div class="front-flip">
+                                <img src="img/tag_purple_detail.png" style="">
+                            </div>
+                            <div class="back-flip">
+                                <img src="img/tag_flip_lab.png" style="">
+                            </div>
+                        </div>
+                        </div>
+                        <!-- flipped image -->
+                    </div>
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!--separator -->
+    <section id="graphic-seperator" data-parallax="scroll" data-image-src="img/538406821.jpg">
+    </section>
+
+    <!-- design-step -->
+    <section id="design-step">
+        <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <div id="design-title" class="block-title">Hassle-free to design your own quest.</div>
+                    <div class="row" style="margin-top:20px; margin-bottom:10px;">
+                        <div class="col-md-4">
+                            <div class="design-step-item">
+                                <img class="img-portfolio img-responsive" style="width: 200px; margin-bottom:20px" src="img/design_step_design.png">
+                                <h4 class="design-title" style="">
+                                    Design the quest
+                                </h4>
+                                <h6 class="design-desc" style="">
+                                    Simply drag and drop on TagHunt online host console to design your quest and customize the contents for each tag.
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="service-item">
+                                <img class="img-portfolio img-responsive" style="width: 200px; margin-bottom:20px" src="img/design_step_mail.png">
+                                <h4 class="design-title" style="">
+                                    Receive the tags
+                                </h4>
+                                <h6 class="design-desc" style="">
+                                    After your quest is submitted, we will deliver TagHunt tags to you shortly.
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="service-item">
+                                <img class="img-portfolio img-responsive" style="width: 200px; margin-bottom:20px" src="img/design_step_deploy.png">
+                                <h4 class="design-title" style="">
+                                    Deploy the tags
+                                </h4>
+                                <h6 class="design-desc" style="">
+                                    Deploy the TagHunt tags to your target destinations.
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cloud" class="tag">
+        <div class="container" style="margin-top: 20px; margin-bottom:20px;">
+            <div class="row text-center">
+                <div class="col-md-5 col-md-offset-1">
+                    <img class="img-responsive" src="img/cloud_management.png" style="max-width: 90%;">
+                </div>
+                <div class="col-md-6 text-vertical-left" style="height:300px; padding-top:30px;">
+                    <h1 id="cloud-title"> Cloud management </h1>
+                    <p id="cloud-desc"> Instantly track the tags' useage statistics in TagHunt online monitor console, or modify the tag content with the host console.  Absolute no physical contact is required after the onetime deployment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Story -->
+    <section id="story" class="story">
+        <div class="container" style="text-align:center">
+            <div id="story-text" class="text-vertical-center" style="display:inline-block;">
+                <h1> Success Story </h1>
+                <p> “I used to run the library tour every semester.  We try TagHunt in the library, the kids indeed learn the library in an organized and interesting way.” - Dominic,  Librarian Teacher at Middle School </p>
+            </div>
+            <img src="./img/library.jpg" class="center-block img-responsive">
+        </div>
+    </section>
+
+    <!-- Callout -->
+    <section id="callout" class="callout" style="display:table">
+        <div style="display:table-cell;vertical-align:middle;text-align:center">
+            <div id="free-title" class="text-vertical-center" style="display:inline-block;">
+                <h1>We Are Young!</h1>
+                <p id="callout-desc">Tell us what you think <br>
+                so we can make your quest more exciting and enjoyable. <br>
+                Let's turn the world into our playground! </p>
+                <a id="contact-us-button" class="btn btn-purple" href="mailto:hello@taghunt.com" style="">Contact us via hello@taghunt.com</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer id="footer" style="">
+        <div id="footer-desc" class="container" style="">
+            <div id="" class="text-vertical-center" style="display:inline-block;">
+                <ul class="bs-docs-footer-links">
+                  <li><a href="about.html">About</a></li>
+                  <li>&nbsp;&middot;&nbsp;</li>
+                  <!--
+                  <li><a href="pricing.html">Pricing</a></li>
+                  <li>&nbsp;&middot;&nbsp;</li>
+                  -->
+                  <li><a href="subscribe.html">Subscribe</a></li>
+                  <li>&nbsp;&middot;&nbsp;</li>
+                  <li><a href="mailto:hello@taghunt.com">Contact</a></li>
+                </ul>
+            </div>
+            <p id="" class="" style="top:100px;">Join us on:</p>
+            <div id="media-icons" class="container">
+                <a href="https://www.facebook.com/TagHunt.Inc" target="_blank"><img src="img/Facebook-icon.png" style=""></a>
+            </div>
+        </div>
+        <div id="copyright" class="text-vertical-center text-muted">
+            <p id="" class="" style=""> &copy; 2015 TagHunt, Inc. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="scripts/script.js"> </script>
+    <!-- google analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-59568802-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</body>
+
+</html>

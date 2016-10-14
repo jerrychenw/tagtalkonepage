@@ -1,0 +1,55 @@
+/* story */
+
+.story {
+    position: relative;
+    width: 100%;
+}
+
+.story .container {
+    margin-top: 20px; 
+    margin-bottom:40px;
+}
+
+#story-text {
+    width: 60%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#story-text h1 {
+    font-family: Roboto Slab;
+    font-weight: 300;
+    font-size:32px;
+    margin: 10px;
+}
+
+#story-text p{
+    font-family: Roboto;
+    font-weight: 300;
+    font-size:20px;
+}
+
+.story img {
+    width: 60%;
+    border-radius: 4px;
+}
+@media all and (max-width: 700px) {
+    .story .container {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    #story-text {
+        .width: 80%;
+    }
+    #story-text h1 {
+        font-size: 26px;
+    }
+    #story-text p {
+        font-size: 16px;
+    }
+    .story img {
+        width: 100%;
+        border-radius: 0px;
+    }
+}

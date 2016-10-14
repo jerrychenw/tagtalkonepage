@@ -1,0 +1,57 @@
+/* Callout */
+
+.callout {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    font-size: 36px;
+    opacity: 0.9;
+    background: url(../img/tags_design.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#free-title {
+    width: 60%;
+    padding:20px;
+    left: 10%;
+    background-color: rgba(255,255,255,0.7); 
+    border-radius: 8px;
+}
+#free-title  h1 {
+    font-family: Roboto Slab;
+    font-weight: 300;
+    font-size:32px;
+    margin: 10px;
+}
+#free-title  p {
+    font-family: Roboto;
+    font-weight: 300;
+    font-size:20px;
+}
+@media all and (max-width: 700px) {
+    #free-title {
+        width: 80%;
+    }
+}
+
+@media all and (max-width: 500px) {
+    #free-title {
+        width: 80%;
+    }
+    #free-title p {
+        font-size: 16px;
+    }
+    #free-title h1 {
+        font-size: 26px;
+    }
+    #contact-us-button {
+        max-width: 100%;
+        margin-top: 0px;
+        display: inline-block;
+    }
+}
+
