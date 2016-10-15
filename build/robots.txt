@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /img/
+Disallow: /bower_compnents/
+Disallow: /scripts/
+Disallow: /styles/
